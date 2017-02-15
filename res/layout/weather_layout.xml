@@ -17,6 +17,13 @@
             android:textColor="#fff"
             android:textSize="24sp"
             />
+
+        <Button
+            android:id="@+id/switch_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换城市" />
+
     </RelativeLayout>
     
     <RelativeLayout 
@@ -90,6 +97,15 @@
 			       
 			</LinearLayout>
          </LinearLayout>
+
+        <Button
+            android:id="@+id/refresh_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="刷新" />
+
     </RelativeLayout>
     
 
