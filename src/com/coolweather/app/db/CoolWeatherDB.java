@@ -22,7 +22,7 @@ public class CoolWeatherDB {
 	private SQLiteDatabase db;
 	
 	private CoolWeatherDB(Context context) {
-		// TODO Auto-generated constructor stub
+
 		CoolWeatherOpenHelper dbHelper=new CoolWeatherOpenHelper(context,DB_NAME,null,VERSION);
 		db=dbHelper.getWritableDatabase();
 	}
@@ -62,7 +62,7 @@ public class CoolWeatherDB {
 		if(city!=null){
 			ContentValues values=new ContentValues();
 			values.put("city_name", city.getCityName());
-			values.put("city_node", city.getCityCode());
+			values.put("city_code", city.getCityCode());
 			values.put("province_id", city.getProvinceId());
 			db.insert("City", null, values);
 		}
